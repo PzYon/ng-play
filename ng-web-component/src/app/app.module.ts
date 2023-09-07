@@ -1,4 +1,4 @@
-import {CUSTOM_ELEMENTS_SCHEMA, DoBootstrap, Injector, NgModule} from '@angular/core';
+import {DoBootstrap, Injector, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {createCustomElement} from '@angular/elements';
 import {WebComponent} from './web.component';
@@ -13,10 +13,7 @@ import {WebComponent} from './web.component';
   providers: [],
   bootstrap: [
     WebComponent
-  ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-  ],
+  ]
 })
 export class AppModule implements DoBootstrap {
   constructor(injector: Injector) {
